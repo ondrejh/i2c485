@@ -1,1 +1,4 @@
 hw/*.bak
+hw/.kicad_pcb.kicad_pcb
+hw/.kicad_pcb.pro
+hw/*.kicad_pcb
