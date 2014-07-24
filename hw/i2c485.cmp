@@ -1,4 +1,4 @@
-Cmp-Mod V01 Created by CvPcb (2013-07-07 BZR 4022)-stable date = 24.7.2014 13:35:39
+Cmp-Mod V01 Created by CvPcb (2013-07-07 BZR 4022)-stable date = 24.7.2014 14:07:34
 
 BeginCmp
 TimeStamp = /53CF7395;
@@ -120,6 +120,20 @@ IdModule  = SOT23;
 EndCmp
 
 BeginCmp
+TimeStamp = /53D0F49F;
+Reference = D7;
+ValeurCmp = LED;
+IdModule  = LED-3MM;
+EndCmp
+
+BeginCmp
+TimeStamp = /53D0F700;
+Reference = D8;
+ValeurCmp = LED;
+IdModule  = LED-0805;
+EndCmp
+
+BeginCmp
 TimeStamp = /53C50111;
 Reference = IC1;
 ValeurCmp = ATMEGA328-A;
@@ -199,6 +213,13 @@ EndCmp
 BeginCmp
 TimeStamp = /53D0BE5B;
 Reference = R7;
+ValeurCmp = 10R;
+IdModule  = SM0805;
+EndCmp
+
+BeginCmp
+TimeStamp = /53D0F4AC;
+Reference = R8;
 ValeurCmp = 10R;
 IdModule  = SM0805;
 EndCmp
