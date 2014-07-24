@@ -30,6 +30,7 @@ LIBS:atmel
 LIBS:contrib
 LIBS:valves
 LIBS:my_regul
+LIBS:i2c485-cache
 EELAYER 27 0
 EELAYER END
 $Descr A4 11693 8268
@@ -569,9 +570,9 @@ Text GLabel 2400 3250 2    43   Input ~ 0
 GNDIN
 Text GLabel 2400 3150 2    43   Input ~ 0
 VIN
-Text GLabel 2400 3050 2    43   Input ~ 0
-485A
 Text GLabel 2400 2950 2    43   Input ~ 0
+485A
+Text GLabel 2400 3050 2    43   Input ~ 0
 485B
 Text GLabel 8600 4250 2    43   Input ~ 0
 485A
@@ -942,10 +943,6 @@ Wire Wire Line
 Wire Wire Line
 	8400 6100 8600 6100
 Wire Wire Line
-	2200 2950 2400 2950
-Wire Wire Line
-	2200 3050 2400 3050
-Wire Wire Line
 	2200 3150 2400 3150
 Wire Wire Line
 	1600 2000 1600 2100
@@ -962,4 +959,8 @@ Wire Wire Line
 	2300 2200 2500 2200
 Wire Wire Line
 	2500 2100 2300 2100
+Wire Wire Line
+	2200 2950 2400 2950
+Wire Wire Line
+	2400 3050 2200 3050
 $EndSCHEMATC
