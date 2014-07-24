@@ -1,4 +1,4 @@
-Cmp-Mod V01 Created by CvPcb (2013-07-07 BZR 4022)-stable date = 23.7.2014 15:09:22
+Cmp-Mod V01 Created by CvPcb (2013-07-07 BZR 4022)-stable date = 24.7.2014 11:33:01
 
 BeginCmp
 TimeStamp = /53CF7395;
@@ -24,7 +24,7 @@ EndCmp
 BeginCmp
 TimeStamp = /53C66E92;
 Reference = C4;
-ValeurCmp = 47u;
+ValeurCmp = 100u/35V;
 IdModule  = C1V8;
 EndCmp
 
@@ -52,7 +52,7 @@ EndCmp
 BeginCmp
 TimeStamp = /53C66F76;
 Reference = C8;
-ValeurCmp = 10u;
+ValeurCmp = 22u/16V;
 IdModule  = C1V8;
 EndCmp
 
@@ -71,24 +71,31 @@ IdModule  = SM0805;
 EndCmp
 
 BeginCmp
+TimeStamp = /53D0BE61;
+Reference = C11;
+ValeurCmp = 100n;
+IdModule  = SM0805;
+EndCmp
+
+BeginCmp
 TimeStamp = /53C66EBD;
 Reference = D1;
-ValeurCmp = BAS40;
-IdModule  = sot23;
+ValeurCmp = 1N4007;
+IdModule  = DO-214AC(SMA);
 EndCmp
 
 BeginCmp
 TimeStamp = /53C66EA3;
 Reference = D2;
-ValeurCmp = BZX84C 16;
-IdModule  = SOT23;
+ValeurCmp = SMAJ18A;
+IdModule  = DO-214AC(SMA);
 EndCmp
 
 BeginCmp
 TimeStamp = /53C674E9;
 Reference = D3;
-ValeurCmp = BZX84C5V6;
-IdModule  = SOT23;
+ValeurCmp = SMAJ15CA;
+IdModule  = DO-214AC(SMA);
 EndCmp
 
 BeginCmp
@@ -101,8 +108,8 @@ EndCmp
 BeginCmp
 TimeStamp = /53C67502;
 Reference = D5;
-ValeurCmp = BZX84C5V6;
-IdModule  = SOT23;
+ValeurCmp = SMAJ15CA;
+IdModule  = DO-214AC(SMA);
 EndCmp
 
 BeginCmp
@@ -120,7 +127,7 @@ IdModule  = TQFP32;
 EndCmp
 
 BeginCmp
-TimeStamp = /53C6735C;
+TimeStamp = /53D099C4;
 Reference = IC2;
 ValeurCmp = SP3485CN;
 IdModule  = so-8;
@@ -162,14 +169,14 @@ IdModule  = SM0805;
 EndCmp
 
 BeginCmp
-TimeStamp = /53C6746E;
+TimeStamp = /53D0BD0B;
 Reference = R3;
 ValeurCmp = 10R;
 IdModule  = SM0805;
 EndCmp
 
 BeginCmp
-TimeStamp = /53C6747D;
+TimeStamp = /53D0BD14;
 Reference = R4;
 ValeurCmp = 10R;
 IdModule  = SM0805;
@@ -190,10 +197,17 @@ IdModule  = SM0805;
 EndCmp
 
 BeginCmp
-TimeStamp = /53C66E63;
+TimeStamp = /53D0BE5B;
+Reference = R7;
+ValeurCmp = 10R;
+IdModule  = SM0805;
+EndCmp
+
+BeginCmp
+TimeStamp = /53D0D67B;
 Reference = U1;
 ValeurCmp = 78L05;
-IdModule  = TO92;
+IdModule  = sot89;
 EndCmp
 
 BeginCmp
