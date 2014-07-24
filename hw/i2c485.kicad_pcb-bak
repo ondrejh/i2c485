@@ -298,7 +298,7 @@
   )
 
   (module SOT23 (layer B.Cu) (tedit 5051A6D7) (tstamp 53D098EE)
-    (at 44.45 34.29 270)
+    (at 43.18 34.29 270)
     (tags SOT23)
     (path /53C6722B)
     (fp_text reference D6 (at 1.99898 0.09906 540) (layer B.SilkS)
@@ -331,7 +331,7 @@
   )
 
   (module SOT23 (layer B.Cu) (tedit 5051A6D7) (tstamp 53D09912)
-    (at 44.45 43.18 270)
+    (at 43.18 43.18 270)
     (tags SOT23)
     (path /53C67212)
     (fp_text reference D4 (at 1.99898 0.09906 540) (layer B.SilkS)
@@ -427,7 +427,7 @@
   )
 
   (module SM0805 (layer B.Cu) (tedit 5091495C) (tstamp 53D09952)
-    (at 44.45 45.72)
+    (at 43.18 45.72)
     (path /53C67117)
     (attr smd)
     (fp_text reference R1 (at 0 0.3175) (layer B.SilkS)
@@ -587,7 +587,7 @@
   )
 
   (module SM0805 (layer B.Cu) (tedit 53D0D7C7) (tstamp 53D09993)
-    (at 49.53 41.91 180)
+    (at 48.26 41.91 180)
     (path /53C67874)
     (attr smd)
     (fp_text reference C10 (at 0 0 180) (layer B.SilkS)
@@ -619,7 +619,7 @@
   )
 
   (module SM0805 (layer B.Cu) (tedit 5091495C) (tstamp 53D099A0)
-    (at 49.53 44.45 180)
+    (at 48.26 44.45 180)
     (path /53C67865)
     (attr smd)
     (fp_text reference C9 (at 0 0.3175 180) (layer B.SilkS)
@@ -715,7 +715,7 @@
   )
 
   (module SM0805 (layer B.Cu) (tedit 5091495C) (tstamp 53D099FB)
-    (at 44.45 36.83)
+    (at 43.18 36.83)
     (path /53C67126)
     (attr smd)
     (fp_text reference R2 (at 0 0.3175) (layer B.SilkS)
@@ -746,8 +746,8 @@
     )
   )
 
-  (module pin_array_3x2 (layer F.Cu) (tedit 42931587) (tstamp 53D09A21)
-    (at 49.53 31.75 90)
+  (module pin_array_3x2 (layer F.Cu) (tedit 42931587) (tstamp 53D0FBA7)
+    (at 49.53 30.48 90)
     (descr "Double rangee de contacts 2 x 4 pins")
     (tags CONN)
     (path /53C67ACC)
@@ -792,8 +792,8 @@
     )
   )
 
-  (module HC-49V (layer F.Cu) (tedit 53D0E891) (tstamp 53D09A2D)
-    (at 50.8 43.18 270)
+  (module HC-49V (layer F.Cu) (tedit 53D0E891) (tstamp 53D0FB98)
+    (at 49.53 43.18 270)
     (descr "Quartz boitier HC-49 Vertical")
     (tags "QUARTZ DEV")
     (path /53C67856)
@@ -946,7 +946,7 @@
   )
 
   (module SM0805 (layer B.Cu) (tedit 5091495C) (tstamp 53D099E1)
-    (at 44.45 48.26 180)
+    (at 43.18 48.26 180)
     (path /53C67162)
     (attr smd)
     (fp_text reference R6 (at 0 0.3175 180) (layer B.SilkS)
@@ -978,7 +978,7 @@
   )
 
   (module SM0805 (layer B.Cu) (tedit 5091495C) (tstamp 53D099EE)
-    (at 44.45 39.37 180)
+    (at 43.18 39.37 180)
     (path /53C67153)
     (attr smd)
     (fp_text reference R5 (at 0 0.3175 180) (layer B.SilkS)
@@ -1010,7 +1010,7 @@
   )
 
   (module SM0805 (layer B.Cu) (tedit 5091495C) (tstamp 53D0C03B)
-    (at 45.72 28.575 270)
+    (at 44.45 28.575 270)
     (path /53D0BE5B)
     (attr smd)
     (fp_text reference R7 (at 0 0.3175 270) (layer B.SilkS)
@@ -1042,7 +1042,7 @@
   )
 
   (module SM0805 (layer B.Cu) (tedit 53D0E6B5) (tstamp 53D0C048)
-    (at 43.18 28.575 90)
+    (at 41.91 28.575 90)
     (path /53D0BE61)
     (attr smd)
     (fp_text reference C11 (at 0 0.3175 360) (layer B.SilkS)
@@ -1303,7 +1303,7 @@
     )
   )
 
-  (module bornier4 (layer F.Cu) (tedit 3EC0ED29) (tstamp 53D09A07)
+  (module bornier4 (layer F.Cu) (tedit 3EC0ED29) (tstamp 53D0FB8B)
     (at 34.29 38.1 270)
     (descr "Bornier d'alimentation 4 pins")
     (tags DEV)
