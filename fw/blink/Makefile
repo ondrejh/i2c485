@@ -7,7 +7,7 @@
 
 MCU = atmega168
 FORMAT = ihex
-TARGET = i2c485bin
+TARGET = blink
 SRC = main.c
 ASRC =
 OPT = s
