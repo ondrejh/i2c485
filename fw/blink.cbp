@@ -2,7 +2,7 @@
 <CodeBlocks_project_file>
 	<FileVersion major="1" minor="6" />
 	<Project>
-		<Option title="softstart" />
+		<Option title="blink" />
 		<Option makefile_is_custom="1" />
 		<Option pch_mode="2" />
 		<Option compiler="avrgcc" />
@@ -31,7 +31,7 @@
 			<Add option="-Wl,-Map=$(TARGET_OUTPUT_FILE).map,--cref" />
 		</Linker>
 		<ExtraCommands>
-			<Add after="avr-size avrsoft.hex" />
+			<Add after="avr-size blink.hex" />
 		</ExtraCommands>
 		<Unit filename="Makefile" />
 		<Unit filename="main.c">

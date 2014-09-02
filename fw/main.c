@@ -12,10 +12,13 @@
 #define LED_OFF() do{PORTC&=~0x02;}while(0)
 #define LED_SWAP() do{PORTC^=0x02;}while(0)
 
+#define TXEN_INIT() do{PORTD&=0x04;DDRD|=0x04;}while(0)
+
 int main(void)
 {
     // init port
     LED_INIT();
+    TXEN_INIT();
 
     while (1) //loop
     {

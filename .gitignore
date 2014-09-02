@@ -5,3 +5,5 @@ hw/*.kicad_pcb
 fw/*.eep
 fw/*.elf
 fw/*.o
+fw/*.cbTemp
+fw/*.layout
