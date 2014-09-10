@@ -6,8 +6,9 @@
 #include <stdbool.h>
 
 #include "uart.h"
+#include "comm.h"
 
-#define TXBUFFLEN 64
+#define TXBUFFLEN 32
 
 uint8_t txbuffer[TXBUFFLEN];
 uint8_t txbuf_inptr = 0;
@@ -130,7 +131,9 @@ void init_uart(void)
 {
     UCSR0A = (1<<U2X0);
     UCSR0B = (1<<RXCIE0) | (1<<TXCIE0) | /*(1<<UDRE0) |*/ (1<<TXEN0) | (1<<RXEN0);
-    UBRR0 = 5; // 9.6kBaud / 3.6864MHz/8
+    UCSR0C = (2<<UPM00) | (2<<UCSZ00); // parity EVEN, 7bits
+    //UBRR0 = 5; // 9.6kBaud / 3.6864MHz/8
+    UBRR0 = 2; // 19.2kBaud / 3.6864MHz/8
     TXEN_INIT();
 }
 
@@ -139,18 +142,14 @@ SIGNAL (USART_RX_vect)
 //void usart_rx(void)
 {
     uint8_t c;
+    uint8_t error = 0;
 
     // test error flags
-    if (UCSR0A&((1<<FE0)|(1<<DOR0)|(1<<UPE0)))
-    {
-        c = UDR0;
-        return; // input error
-    }
-    else
-    {
-        c = UDR0;
-        //uart_putchar(c); // echo
-    }
+    if (UCSR0A&((1<<FE0)|(1<<DOR0)|(1<<UPE0))) error=1;
+
+    c = UDR0;
+
+    comm_rx_char(c,error);
 }
 
 /// tx buffer empty interrupt handler
@@ -176,7 +175,7 @@ SIGNAL (USART_UDRE_vect)
 
 /// transmit complette interrupt handler
 SIGNAL (USART_TX_vect)
-//void usart_tx(void)
 {
+    //
     TXEN_OFF();
 }

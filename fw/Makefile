@@ -8,7 +8,7 @@
 MCU = atmega168
 FORMAT = ihex
 TARGET = i2c485bin
-SRC = main.c
+SRC = main.c uart.c comm.c
 ASRC =
 OPT = s
 BASEADDR = 0x0000

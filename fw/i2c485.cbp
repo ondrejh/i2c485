@@ -34,6 +34,10 @@
 			<Add after="avr-size i2c485bin.hex" />
 		</ExtraCommands>
 		<Unit filename="Makefile" />
+		<Unit filename="comm.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="comm.h" />
 		<Unit filename="main.c">
 			<Option compilerVar="CC" />
 		</Unit>
