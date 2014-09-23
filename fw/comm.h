@@ -5,7 +5,7 @@
 
 #include <inttypes.h>
 
-#define FRAME_MAX_LENGTH 16
+#define FRAME_MAX_LENGTH 64
 #define CR 0x0D
 #define LF 0x0A
 

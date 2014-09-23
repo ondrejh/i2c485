@@ -101,8 +101,9 @@ int8_t uart_putchar(uint8_t c)
     {
         TXEN_ON();
         UDR0 = c;
-        UCSR0B |= (1<<UDRE0);
-    }
+
+    } else UCSR0B |= (1<<UDRIE0);
+
     // push buffer pointer
     txbuf_inptr=next_bufptr;
     // return OK
@@ -158,24 +159,25 @@ SIGNAL (USART_UDRE_vect)
     // calculate buffer pointer
     uint8_t next_bufptr = txbuf_outptr+1;
     if (next_bufptr>=TXBUFFLEN) next_bufptr=0;
+
     // push buffer pointer
     txbuf_outptr=next_bufptr;
 
     // test if something left in the buffer (if any then transmitt it)
     if (txbuf_outptr!=txbuf_inptr)
     {
-        UDR0=txbuffer[txbuf_outptr];
         TXEN_ON();
+        UDR0=txbuffer[txbuf_outptr];
     }
     else
     {
-        UCSR0B &= ~(1<<UDRE0);
+        UCSR0B &= ~(1<<UDRIE0);
     }
+
 }
 
 /// transmit complette interrupt handler
 SIGNAL (USART_TX_vect)
 {
-    //
-    TXEN_OFF();
+    if (UCSR0A & (1<<UDRE0)) TXEN_OFF();
 }
