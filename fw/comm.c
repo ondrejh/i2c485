@@ -11,6 +11,18 @@
 #include <avr/io.h>
 #define LED_SWAP() do{PORTC^=0x02;}while(0)
 
+#define BROADCAST_ADDRESS 0x00
+
+const uint8_t* manufacturer_name = (const uint8_t*)"ondrejh.ck@email.cz";
+const uint8_t* product_code = (const uint8_t*)"i2c485";
+const uint8_t* version_number = (const uint8_t*)"0.0001beta";
+
+uint8_t device_address = 0x01;
+
+void build_message(uint8_t* message, uint8_t addr, uint8_t fcn, uint8_t* data, uint8_t dlen)
+{
+}
+
 /** hex char into int conversion
  The function is called from within comm_rx_char function.
  Later on it should be placed somewhere in the utils module. */
@@ -26,6 +38,19 @@ int8_t hexc2int(uint8_t c)
  Now it only changing LED status to show that something was correctly received. */
 void use_checked_frame(uint8_t addr, uint8_t fcn, uint8_t* data, uint8_t dlen)
 {
+    if (addr==device_address)
+    {
+        switch (fcn)
+        {
+            default: // unknown function code
+
+                break;
+        }
+    }
+    else if (addr==BROADCAST_ADDRESS)
+    {
+
+    }
     LED_SWAP();
 }
 
